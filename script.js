@@ -23,7 +23,7 @@ let acceptLength = function () {
 
 let charType = function () {
   let charType = prompt('Please enter the character type, select from the following (1 or 2):\n' +
-    '1: lowercase, uppercase letters and numbers/n' +
+    '1: lowercase, uppercase letters and numbers\n' +
     '2: lowercase, uppercase letters, numbers and special characters ');
 
   while (charType === null) {

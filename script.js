@@ -184,14 +184,16 @@ function confirmChoices() {
 };
 
 document.getElementById('generate').addEventListener('click', function() {
+  document.getElementById('password').value = '';
+  pwResult = [];
   pwLength = getSize();
   confirmChoices();
   generatePassword(pwLength);
   console.log(pwResult)
-  // document.write(pwResult.join(''));
   FinalPassword = pwResult.join('');
   console.log(FinalPassword);
   writePassword();
+  
 })
 
 let pwLength;
